@@ -32,16 +32,19 @@
 
     <!-- Main section starts here -->
     <main>
-        <section class="bg-blue-300 w-3/4 mx-auto mt-12">
-            <h3 class="text-3xl text-center">Please Login</h3>
-            <input type="email" name="" id="" placeholder="Please input your email adress">
-            <br>
-            <br>
-            <input type="password" name="" id="" placeholder="Please enter the password">
+        <section class="bg-blue-200 w-3/4 mx-auto mt-12 text-center rounded-xl">
+            <h3 class="text-3xl p-6 font-semibold">Please Login</h3>
+            <input class="block w-2/4 px-6 mx-auto rounded-lg h-14 mb-5" type="email" name="" id="user-email"
+                placeholder="Please input your email adress">
+            <input class="block w-2/4 px-6 mx-auto rounded-lg h-14" type="password" name="" id="user-pass"
+                placeholder="Please enter the password">
+            <button id="login-btn" class="bg-blue-900 hover:bg-sky-500  my-6 h-[3rem] w-[12.666667%] font-medium text-lg rounded-lg text-white uppercase">
+                Login
+            </button>
         </section>
-
     </main>
-
+    <!-- JS Added here -->
+    <script src="login.js"></script>
 </body>
 
 </html>
