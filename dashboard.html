@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVB-dashboard</title>
+    <!-- favicon Link -->
+    <link rel="shortcut icon" href="svb.jpg" type="image/x-icon">
+    <!-- Tailwind CSS CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Libre import form google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Libre Baskerville', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mt-6">
+        <h1 class="text-4xl font-medium text-center text-blue-950">
+            Dashboard <span class="font-extrabold text-blue-500 ">></span>
+        </h1>
+        <p class="text-center text-sm font-light mt-4 text-gray-500">Enjoy whlie you still can. :3</p>
+    </header>
+    <!-- Header ends here -->
+    <!-- main section starts here -->
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-5 w-3/4 mx-auto text-white text-center">
+                <div class="bg-green-400 rounded-xl p-10">
+                    <h3 class="text-3xl mb-5">Deposit</h3>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-pink-400 rounded-xl p-10">
+                    <h3 class="text-3xl mb-5">Widthraw</h3>
+                    <h2 class="text-5xl">$<span id="widthraw-total">00</span></h2>
+                </div>
+                <div class="bg-orange-500 rounded-xl p-10">
+                    <h3 class="text-3xl mb-5">Balance</h3>
+                    <h2 class="text-5xl">$<span id="balance-total">1200</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and widthraw -->
+        <section class="my-12">
+            <!-- Deposit section -->
+            <div class="grid grid-cols-2 gap-5 w-3/4 mx-auto text-center">
+                <div class="bg-indigo-500 rounded-xl p-10">
+                    <h3 class="text-3xl mb-5 text-white">Deposit Amount</h3>
+                    <input class="block w-[95%] h-[2.9rem] px-6 mx-auto rounded-lg  " type="number" name=""
+                        id="user-deposit-amount" placeholder="Please put the deposit amount">
+                    <button id="deposit-btn"
+                        class="bg-blue-900 hover:bg-sky-500  my-6 h-[3rem] w-[36.666667%] font-medium text-lg rounded-lg text-white uppercase">
+                        Deposit
+                    </button>
+                </div>
+                <!-- Widthraw section -->
+                <div class="bg-purple-500 rounded-xl p-10">
+                    <h3 class="text-3xl mb-5 text-white">Widthraw Amount</h3>
+                    <input class="block w-[95%] h-[2.9rem] px-6 mx-auto rounded-lg" type="number" name=""
+                        id="user-widthraw-amount" placeholder="Please put the withdrawal amount">
+                    <button id="widthraw-btn"
+                        class="bg-blue-900 hover:bg-sky-500  my-6 h-[3rem] w-[36.666667%] font-medium text-lg rounded-lg text-white uppercase">
+                        Widthraw
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS added -->
+    <script src="dash.js"></script>
+</body>
+
+</html>

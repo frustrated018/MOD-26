@@ -5,8 +5,8 @@ document.getElementById('login-btn').addEventListener('click', function () {
     // Dangerous [Not the proper way to validate users] but fine for now BS.
 
     if (email === 'takameredebo@chormail.com' && password === 'heheboiii') {
-        console.log('Khela hobe!!');
-    }else{
-        console.log('Tui Keda?!');
+        window.location.href = 'dashboard.html';
+    } else {
+        alert('Tui Keda?!');
     }
 })
