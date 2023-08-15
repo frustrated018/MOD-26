@@ -18,40 +18,34 @@
         * {
             font-family: 'Libre Baskerville', serif;
         }
-    </style>
-    <!-- custom Color Pallet -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                C012a4a: '012a4a',
-                C013a63: '013a63',
-              }
-            }
-          }
+
+        .bg-image {
+            background-image: url('vladimir-solomianyi-rKPiuXLq29A-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
         }
-      </script>
+    </style>
 </head>
 
-<body>
+<body class="bg-image h-[100vh]">
     <header class="mt-6">
-        <h1 class="text-6xl font-medium text-center text-blue-950 ">Silicon Vally Bank
+        <h1 class="text-6xl font-medium text-center text-white">Silicon Vally Bank
             <span class="font-extrabold text-blue-500 ">></span>
         </h1>
-        <p class="text-center text-sm font-light mt-4 text-gray-500">You can definitely trust us. :3</p>
+        <p class="text-center text-sm font-light mt-4 text-white">You can definitely trust us. :3</p>
     </header>
     <!-- Header ends here -->
 
     <!-- Main section starts here -->
     <main>
-        <section class="bg-blue-200 w-3/4 mx-auto mt-12 text-center rounded-xl">
+        <section class="bg-green-200 w-3/4 mx-auto mt-12 text-center rounded-xl">
             <h3 class="text-3xl p-6 font-semibold">Please Login</h3>
             <input class="block w-2/4 px-6 mx-auto rounded-lg h-14 mb-5" type="email" name="" id="user-email"
                 placeholder="Please input your email adress">
             <input class="block w-2/4 px-6 mx-auto rounded-lg h-14" type="password" name="" id="user-pass"
                 placeholder="Please enter the password">
-            <button id="login-btn" class="bg-blue-900 hover:bg-sky-500  my-6 h-[3rem] w-[12.666667%] font-medium text-lg rounded-lg text-white uppercase">
+            <button id="login-btn"
+                class="bg-blue-900 hover:bg-sky-500  my-6 h-[3rem] w-[12.666667%] font-medium text-lg rounded-lg text-white uppercase">
                 Login
             </button>
         </section>
