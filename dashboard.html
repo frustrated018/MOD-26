@@ -24,15 +24,20 @@
             background-size: cover;
             background-position: center;
         }
+        /* To remove the arrows inside input field */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            display: none;
+        }
     </style>
 </head>
 
 <body class="bg-image h-[100vh]">
-    <header class="mt-6">
-        <h1 class="text-4xl font-medium text-center text-white">
-            Dashboard <span class="font-extrabold text-blue-950 ">></span>
+    <header class="">
+        <h1 class="pt-10 text-4xl font-medium text-center text-white">
+            Dashboard - <span class="font-extrabold text-blue-950 ">SVB></span>
         </h1>
-        <p class="text-center text-sm font-light mt-4 text-blue-950">Enjoy whlie you still can. :3</p>
+        <p class="text-center text-sm font-normal mt-4 text-white">Enjoy whlie you still can. :3</p>
     </header>
     <!-- Header ends here -->
     <!-- main section starts here -->
@@ -49,7 +54,7 @@
                 </div>
                 <div class="bg-orange-500 rounded-xl p-10">
                     <h3 class="text-3xl mb-5">Balance</h3>
-                    <h2 class="text-5xl">$<span id="balance-total">1200</span></h2>
+                    <h2 class="text-5xl">$<span id="balance-total">69420</span></h2>
                 </div>
             </div>
         </section>
@@ -59,7 +64,7 @@
             <div class="grid grid-cols-2 gap-5 w-3/4 mx-auto text-center">
                 <div class="bg-indigo-500 rounded-xl p-10">
                     <h3 class="text-3xl mb-5 text-white">Deposit Amount</h3>
-                    <input class="block w-[95%] h-[2.9rem] px-6 mx-auto rounded-lg  " type="number" name=""
+                    <input class="block w-[95%] h-[2.9rem] px-6 mx-auto rounded-lg" type="number" 
                         id="user-deposit-amount" placeholder="Please put the deposit amount">
                     <button id="deposit-btn"
                         class="bg-blue-900 hover:bg-sky-500  my-6 h-[3rem] w-[36.666667%] font-medium text-lg rounded-lg text-white uppercase">
@@ -69,7 +74,7 @@
                 <!-- Widthraw section -->
                 <div class="bg-purple-500 rounded-xl p-10">
                     <h3 class="text-3xl mb-5 text-white">Widthraw Amount</h3>
-                    <input class="block w-[95%] h-[2.9rem] px-6 mx-auto rounded-lg" type="number" name=""
+                    <input class="block w-[95%] h-[2.9rem] px-6 mx-auto rounded-lg" type="number" 
                         id="user-widthraw-amount" placeholder="Please put the withdrawal amount">
                     <button id="widthraw-btn"
                         class="bg-blue-900 hover:bg-sky-500  my-6 h-[3rem] w-[36.666667%] font-medium text-lg rounded-lg text-white uppercase">

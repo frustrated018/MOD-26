@@ -10,11 +10,18 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
 
     // setting the input value in deposit total
     depositTotal.innerText = parseFloat(depositTotal.innerText) + parseFloat(depositAmount.value);
-    // adding the input value to the balance Total.
-    balanceTotal.innerText = parseFloat(balanceTotal.innerText) + parseFloat(depositTotal.innerText);
 
     // clearing the deposit amount afterwards
     depositAmount.value = '';
+
+    // adding the input value to the balance Total.
+    balanceTotal.innerText = parseFloat(balanceTotal.innerText) + parseFloat(depositTotal.innerText);
+
+    // Validation condition for negative numbers
+    if (depositAmount.value < 0) {
+        alert('Please input a valid amount.');
+        return;
+    }
 })
 
 // Function for widthrawing money
@@ -24,9 +31,15 @@ document.getElementById('widthraw-btn').addEventListener('click', function () {
 
     widthrawTotal.innerText = parseFloat(widthrawTotal.innerText) + parseFloat(widthrawAmount.value);
 
+    // Clearing the widthraw amount afterwards
+    widthrawAmount.value = '';
+
     // adding the input value to the balance Total.
     balanceTotal.innerText = parseFloat(balanceTotal.innerText) - parseFloat(widthrawTotal.innerText);
 
-    // Clearing the widthraw amount afterwards
-    widthrawAmount.value = '';
+    // Validation condition for negative numbers
+    if (widthrawAmount.value < 0) {
+        alert('Please input a valid amount.');
+        return;
+    }
 })
